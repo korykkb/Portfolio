@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.icon {
+    margin-left: 20px;
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center; 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(2, 218, 197);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+/*
+.header .fa {
+    display: none;
+  }
+  
+  @media(max-width: 1000px) {
+    .hero-textbox h1 {
+        font-size: 50px;
+      }
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      position: absolute;
+      background: red;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200;
+      text-align: left;
+      z-index: 2;
+    }
+    .header .fa {
+      display: block;
+      color: white;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+  
+/*
+.header {
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e6e6e6;
+}
+  
+.left-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}  
+  
+.logo {
+    width: 180px;
+    height: 70px;
+    margin: 5px 3px 2px;
+}
+
+.right-section {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+button {
+    border: none;
+    background-color: white;
+    margin-right: 5px;
+}
+
