@@ -1,7 +1,7 @@
 .hero {
-    background-color: rgb(240, 240, 240); 
+    background-color: rgb(240, 240, 240);
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 20px; 
 }
 
 .hero .container {
@@ -18,13 +18,18 @@
    
 }
 
+.profile-img {
+    width: 40%;
+    height: auto;
+}
+
+.hero h2 {
+    margin-bottom: 50px;
+}
+
 .hero h3 {
     text-align: center;
     font-weight: 300;
-}
-
-.hero img {
-    width: 300px;
 }
 
 .contact-btn {
@@ -55,3 +60,4 @@
     transition: 1s ease;
     cursor: pointer;
 }
+

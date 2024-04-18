@@ -1,0 +1,52 @@
+.about {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.web-development-gif {
+    margin: 50px 0px;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.9); /* Horizontal offset, vertical offset, blur radius, spread radius, color */;
+}
+
+.about p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.skills-div {
+    display: flex;
+}
+
+.skills img {
+    width: 55px;
+    margin: 0 15px;
+}
+
+.skills p {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
