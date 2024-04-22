@@ -1,0 +1,82 @@
+.projects {
+    background-color: rgb(240, 240, 240);
+    padding: 80px 0;
+}
+
+.projects h2 {
+    margin-left: 30px;
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    gap: 50px;
+    justify-content: center;
+    margin: 60px;
+    
+}
+
+.project {
+    position: relative;
+}
+
+.project h3 {
+    margin-bottom: 15px;
+}
+
+.project-front {
+    background-color: rgb(0 0 0 / 76%);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
+
+.project .top {
+    margin: 15px;
+}
+
+.projects img {
+   max-width: 100%;
+   height: 100%;
+   position: relative;
+   z-index: 1;
+   transition: all 0.4s ease;
+}
+
+.project-front:hover  {
+    opacity: 1;
+}
+
+.project .bottom {
+    margin: 15px;
+}
+
+.fa-arrow-up-right-from-square,
+.fa-github {
+    font-size: 30px;
+}
+
+.fa-github {
+    margin-left: 15px;
+}
+
+
+.project .back {
+    position: absolute;
+    inset: 10px;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.3s;
+}
