@@ -17,62 +17,78 @@
     <link rel="stylesheet" href="styles/footer.css">
 
     <title>Kory Bromwell | Frontend Web Developer</title>
-    <script src="https://kit.fontawesome.com/767f14acaa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/767f14acaa.js" crossorigin="anonymous">
+    </script>
+
+    <script defer type="module" src="scripts/index.js"></script>
 
 </head>
 <body>
-    <section class="header">
-        <a class="icon" href="index.html">Kory.Dev</a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+    <section id="header" class="header">
+        <div class="container">
+            <a class="icon" href="index.html">Kory.Dev</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="content">
-                <h2>Front-End Web Developer</h2>
-                <img class="profile-img" src="images/cate.jpeg" alt="">
+                <h1>Front-End Web Developer</h1>
+                <img class="profile-img" src="images/profile.jpg" alt="">
                 <h3>Hi, I'm Kory Bromwell. I'm a passionate Front-End Web Developer based in Honolulu, HI.</h3>
-                <button class="contact-btn">Contact Me</button>
+                <a href="#contact">
+                    <button class="contact-btn">Contact Me</button>
+                </a>
+                
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/kory-bromwell-b68046201/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/korykkb" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="skills">
+                    <h3>Tech Stack</h3>
+                    <div class="skills-div">
+                        <div class="skill1">
+                            <img src="images/html5.png" alt="">
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="skill2">
+                            <img src="images/css3.png" alt="">
+                            <p>CSS 3</p>
+                        </div>
+                        <div class="skill3">
+                            <img src="images/JavaScript.png" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </div> 
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="content">
                 <img class="web-development-gif" src="images/web-development.gif" alt="">
                 <h2>About Me</h2>
-                <p>My ultimate goal is to code and design websites, web apps, and interfaces of the highest standard. I am passionate about creating visually appealing products that are effective and efficient.</p>
+                <p class="about-p">My ultimate goal is to code and design websites, web apps, and interfaces of the highest standard. I am passionate about creating visually appealing products that are effective and efficient.</p>
                 <p>Check out my projects below!</p>
             </div>
-            <div class="skills">
-                <h3>Tech Stack</h3>
-                <div class="skills-div">
-                    <div class="skill1">
-                        <img src="images/html5.png" alt="">
-                        <p>HTML 5</p>
-                    </div>
-                    <div class="skill2">
-                        <img src="images/css3.png" alt="">
-                        <p>CSS 3</p>
-                    </div>
-                    <div class="skill3">
-                        <img src="images/JavaScript.png" alt="">
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-            </div>   
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h2>Projects I've Build</h2>
             <div class="grid">
@@ -83,8 +99,14 @@
                             <p>This project mimics the website of the e-commerence giant Amazon. HTML5, CSS3, and Javascript are used to build and design the home, orders, checkout, and tracking pages.</p>
                         </div>
                         <div class="bottom">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            <i class="fa-brands fa-github"></i>
+                            <a href="https://korykkb.github.io/Amazon-Clone/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                            <a href="https://github.com/korykkb/Amazon-Clone?tab=readme-ov-file" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>    
+                            
                         </div>
                     </div>
                     <img src="images/amazon-screenshot.png" alt="amazon clone screenshot">
@@ -97,23 +119,23 @@
                             <p>This is a basic project mimicking the homepage of video sharing and social media site, YouTube. This was my first project showcasing HTML5 and CSS3.</p>
                         </div>
                         <div class="bottom">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            <i class="fa-brands fa-github"></i>
+                            <a href="https://korykkb.github.io/Youtube-Clone/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                            <a href="https://github.com/korykkb/Youtube-Clone?tab=readme-ov-file" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>    
                         </div>
                     </div>
                     <img src="images/youtube-screenshot.png" alt="youtube clone screenshot">
-                    <div class="back"></div>
-                </div>
-                <div class="project">
-                    <div class="project-front"></div>
-                    <img src="images/amazon-screenshot.png" alt="amazon clone screenshot">
                     <div class="back"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact-info">
                 <div class="contact-title">
@@ -145,11 +167,11 @@
             <h2>Kory.dev</h2>
             <p>Copyright © 2024 Kory Bromwell</p>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/kory-bromwell-b68046201/">
+                <a href="https://www.linkedin.com/in/kory-bromwell-b68046201/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/korykkb">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github" target="_blank"></i>
                 </a>
             </div>
             
