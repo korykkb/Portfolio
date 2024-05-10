@@ -19,6 +19,7 @@
 
 .project {
     position: relative;
+    width: 100%;
 }
 
 
@@ -40,12 +41,6 @@
     opacity: 0;
     transition: all 0.3s ease;
     font-size: 3vw;
-}
-
-@media(width >= 970px) {
-    .project-front {
-        font-size: 1.5vw;
-    }
 }
 
 .project .top {
@@ -86,4 +81,16 @@
     height: 100%;
     z-index: 0;
     transition: 0.3s;
+}
+
+@media(width >= 970px) {
+    .project-front {
+        font-size: 1.5vw;
+    }
+}
+
+@media(width <= 400px) {
+    .projects .grid {
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    }
 }
