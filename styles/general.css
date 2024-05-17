@@ -5,8 +5,19 @@
 }
 
 html {
+    --color-darkest: black;
+    --color-dark: rgb(16, 20, 28);
+    --color-lightest: white;
+    --color-light: rgb(240, 240, 240);
     scroll-behavior: smooth;
     width: 100%;
+}
+
+.dark-mode {
+    --color-darkest: white;
+    --color-dark: rgb(240, 240, 240);
+    --color-lightest: black;
+    --color-light: rgb(16, 20, 28);
 }
 
 body {

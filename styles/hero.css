@@ -1,5 +1,6 @@
 .hero {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--color-light);
+    color: var(--color-darkest);
     padding-top: 120px; 
     padding-bottom: 80px;
 }
@@ -126,7 +127,7 @@
 }
 
 .skills h3 {
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--color-darkest);
     margin-bottom: 20px;
 }
 .skills-div {

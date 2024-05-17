@@ -1,4 +1,5 @@
 .header {
+    color: var(--color-darkest);
     position: fixed;
     top: 0;
     right: 0;
@@ -19,7 +20,7 @@
 
 .icon {
     margin-left: 20px;
-    color: black;
+    color: var(--color-darkest);
     font-weight: 800;
     font-size: 25px;
     text-decoration: none;
@@ -31,6 +32,7 @@
     text-align: center; 
     font-weight: 700;
     font-size: 20px;
+    display: flex;
 }
 
 .nav-links ul li {
@@ -41,7 +43,7 @@
 }
 
 .nav-links ul li a {
-    color: black;
+    color: var(--color-darkest);
     text-decoration: none;
 }
 
@@ -50,9 +52,9 @@
     width: 0%;
     height: 2px;
     background: rgba(2, 218, 197);
-    display: block;
     margin: auto;
     transition: 0.5s;
+    display: block;
 }
 
 .nav-links ul li:hover::after {
@@ -68,7 +70,7 @@
     height: 100vh;
     width: 225px;
     z-index: 1031;
-    background-color: whitesmoke;
+    background-color: var(--color-lightest);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -83,11 +85,16 @@
 
 .fa-bars {
     display: none !important;
-    margin-right: 12px;
+    margin: 4px 5px 2px 15px;
 }
 
 .fa-x {
     margin: 10px 0 10px 12px;
+}
+
+.fa-moon {
+    margin: 0 20px;
+    font-size: 26px;
 }
 
 
@@ -97,6 +104,9 @@
     }
     .fa-bars {
         display: block !important;
+    }
+    .nav-links {
+        flex-direction: row-reverse;
     }
 }
 
