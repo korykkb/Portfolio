@@ -56,8 +56,13 @@
    transition: all 0.4s ease;
 }
 
+.projects img:hover {
+    transform: translateZ(10);
+}
+
 .project-front:hover  {
     opacity: 1;
+    
 }
 
 .project .bottom {
