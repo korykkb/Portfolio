@@ -54,24 +54,29 @@ xIcon.addEventListener('click', function() {
 
 const toggle = document.querySelector("#darkmode-toggle");
 
+toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
 let getMode = localStorage.getItem("mode");
 if (getMode && getMode === "dark-mode") {
   document.body.classList.add("dark-mode");
   toggle.classList.add("active");
 }
 
+//need to activate input:checked css
+
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
   if (!document.body.classList.contains("dark-mode")) {
-    return localStorage.setItem("mode", "light");
+    return localStorage.setItem("mode", "light") 
   }
-  localStorage.setItem("mode", "dark-mode")
+  localStorage.setItem("mode", "dark-mode");
 })
 
-toggle.addEventListener("click", () => toggle.classList.toggle("active"));
 
-console.log(toggle)
+
+
+
 
 /*
 const themeToggleInput = document.querySelector('#darkmode-toggle');

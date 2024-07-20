@@ -36,11 +36,11 @@ input {
     visibility: hidden;
 }
 
-input:checked + label {
-    background: #242424;
+input.active + label {
+    background-color: #242424;
 }
 
-input:checked + label:after {
+input.active + label:after {
     left: 72px;
     transform: translateX(-100%);
     background: linear-gradient(180deg,#777,#3a3a3a)
